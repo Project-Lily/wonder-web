@@ -10,7 +10,7 @@ export default function Solution() {
       </p>
       <br></br>
       <p className="text-center text-black pb-2">
-        With a high TKDN score of over 30%, Wonder Reader’s main goal is to provide a tool for the visually impaired that is as
+        With a high TKDN score of over 30%, Wonder Reader's main goal is to provide a tool for the visually impaired and deafblind that is as
         accessible and helpful as possible.
       </p>
     </section>

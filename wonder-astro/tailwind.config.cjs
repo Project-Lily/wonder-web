@@ -7,7 +7,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Plus\\ Jakarta\\ Sans', ...defaultTheme.fontFamily.sans]
+                sans: ['Plus\\ Jakarta\\ Sans', ...defaultTheme.fontFamily.sans],
+                pacifico: ['Pacifico', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 'wonder-purple': '#8952C7'

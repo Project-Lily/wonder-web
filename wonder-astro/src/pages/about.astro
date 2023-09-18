@@ -5,7 +5,13 @@ import Us from "../components/About/Us";
 import Layout from "../layouts/Layout.astro";
 ---
 <Layout>
-    <Problem></Problem>
-    <Solution></Solution>
-    <Us></Us>
+  <div class="md:flex">
+    <div class="md:flex flex-col w-100">
+      <Problem />
+      <Solution />
+    </div>
+    <div class="md:flex flex-col w-100">
+      <Us />
+    </div>
+  </div>
 </Layout>
