@@ -1,8 +1,8 @@
 ---
-import Hero from "../components/Hero";
-import Youtube from "../components/Youtube";
-import About from "../components/About"
-import Partner from "../components/Partner";
+import Header from "../components/Header";
+import "@fontsource/plus-jakarta-sans"; 
+import '@fontsource/plus-jakarta-sans/500.css';
+import '@fontsource/plus-jakarta-sans/700.css';
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -10,13 +10,11 @@ import Partner from "../components/Partner";
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-	<main>
-		<Hero/>
-		<Youtube/>
-		<About/>
-		<Partner/>
+    <Header/>
+	<main class="max-w-screen-xl mx-auto">
 		<slot />
 	</main>
 </body>

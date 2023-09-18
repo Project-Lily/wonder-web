@@ -1,13 +1,16 @@
-import React from 'react'
-
-function Youtube() {
+export default function Youtube() {
   return (
-    <section>
-        <div className='mx-auto bg-gradient-to-b from-purple-500 to-white to-50%'>
-            <iframe className='mx-auto border-black border-4 p-2 md:p-7 rounded-lg bg-white w-4/5 md:w-1/2 aspect-video' src="https://www.youtube.com/embed/JViAbPYdxp4?si=UnA2XHeCDHyqPzFr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+    <section className="m-5 max-w-screen-md border-black bg-wonder-purple border-2 border-b-4 border-r-4 p-1 rounded-lg aspect-video">
+      <p className=" text-center pb-2 text-white font-bold">
+        <i className="fa-solid fa-keyboard"></i> What We Have
+      </p>
+      <iframe
+        className="w-full h-full"
+        src="https://www.youtube.com/embed/JViAbPYdxp4?si=UnA2XHeCDHyqPzFr"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen={true}
+      ></iframe>
     </section>
-  )
+  );
 }
-
-export default Youtube
