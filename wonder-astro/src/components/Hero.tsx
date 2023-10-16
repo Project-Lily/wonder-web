@@ -1,9 +1,32 @@
-export default function Hero() {
+import React from 'react'
+import binus from '../assets/binus.png'
+import gdsc from '../assets/gdsc.png'
+import google from '../assets/google.png'
+import mitra from '../assets/mitra.png'
+
+function Hero() {
   return (
-    <section className="m-5">
-      <div className="text-wonder-purple font-bold text-5xl">Wonder Reader</div>
-      <br></br>
-      <div className="text-wonder-purple font-medium text-2xl">A Game-Changing Solution for Indonesia's Visually Impaired and Deafblind</div>
+    <section className='mx-auto w-11/12 bg-gradient-to-b from-wonder-purple-transparent  from-0% to-wonder-background to-100% h-full rounded-2xl overflow-hidden'>
+      <div className='pl-14 py-20'>
+        <span className='text-wonder-text text-7xl font-extrabold'>Discover</span><span className='text-wonder-purple text-7xl font-extrabold'> Wonder Reader:</span>
+        <br/>
+        <span className='text-wonder-text text-6xl font-extrabold'>a braille keyboard for </span> <span className='text-wonder-purple text-6xl font-extrabold'>all</span>
+        <br/>
+        <div className='w-1/2 opacity-80 py-4'>
+          <span className='text-wonder-text text-3xl font-normal'>The revolutionary braille keyboard meant for everyone to learn and grow.</span>
+        </div> 
+        <button className='my-8 bg-wonder-purple text-white py-4 px-14 rounded-2xl h-auto text-left'>Contact Us!</button>
+        <br/>
+        <span className='text-2xl opacity-60 font-normal'>Our wonderful partners!</span>
+        <div className='flex'>
+          <img src={gdsc} className='max-w-full max-h-full object-contain mr-4'></img>
+          <img src={mitra} className='max-w-full max-h-full object-contain mr-4'></img>
+          <img src={google} className='max-w-full max-h-full object-contain mr-4'></img>
+          <img src={binus} className='max-w-full max-h-full object-contain'></img>
+        </div>
+      </div>
     </section>
-  );
+  )
 }
+
+export default Hero 

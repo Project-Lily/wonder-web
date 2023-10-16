@@ -1,9 +1,9 @@
 ---
-import Header from "../components/Header";
-import "@fontsource/plus-jakarta-sans"; 
-import '@fontsource/plus-jakarta-sans/500.css';
-import '@fontsource/plus-jakarta-sans/700.css';
-import "@fontsource/pacifico";
+import Hero from "../components/Hero";
+import Youtube from "../components/Youtube";
+import Features from "../components/Features";
+import Navbar from '../components/Navbar'
+import News from '../components/News';
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -14,9 +14,11 @@ import "@fontsource/pacifico";
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <Header client:load/>
-	<main class="max-w-screen-xl mx-auto">
-		<slot />
+	<main>
+		<Hero/>
+		<Youtube/>
+		<Features/>
+		<News/>
 	</main>
 	<script type="module">
 		// TODO: Quick hack to make firebase work
