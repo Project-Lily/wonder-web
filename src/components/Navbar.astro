@@ -1,0 +1,21 @@
+---
+import { Icon } from "astro-icon";
+
+import Contact from "./Contact.astro";
+---
+
+<nav class="flex items-center justify-center gap-[98px] py-9 font-jakarta-sans text-wonder-text">
+  <div class="flex items-center">
+    <Icon name="ic-wonder-nav" class="h-[72.5px]" />
+
+    <Icon name="ic-wonder-nav-text" class="h-[32px]" />
+  </div>
+
+  <a href="/" class="px-[13px] py-[17px] text-2xl font-medium">Home</a>
+
+  <a href="/#" class="px-[13px] py-[17px] text-2xl font-medium">About Us</a>
+
+  <a href="/#" class="px-[13px] py-[17px] text-2xl font-medium">Press Kit</a>
+
+  <Contact />
+</nav>
