@@ -1,0 +1,13 @@
+---
+import { articles } from "@/config/articles";
+
+import Article from "../Article.astro";
+---
+
+<section class="flex flex-col items-center gap-6 py-[168px] font-jakarta-sans">
+  <h1 class="px-[10px] py-4 text-[44px] font-extrabold text-wonder-text">What's New at Wonder Reader?</h1>
+
+  <div class="flex flex-wrap justify-center gap-20">
+    {articles.map((article) => <Article article={article} />)}
+  </div>
+</section>
