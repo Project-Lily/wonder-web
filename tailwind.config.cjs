@@ -8,8 +8,8 @@ export default {
     extend: {
       fontFamily: {
         primary: [...defaultTheme.fontFamily.sans],
-        body: ["'Plus Jakarta Sans'"],
-        "jakarta-sans": ["Plus Jakarta Sans", "sans-serif"],
+        body: ["'Plus Jakarta Sans Variable'"],
+        "jakarta-sans": ["Plus Jakarta Sans Variable", "sans-serif"],
       },
       colors: {
         "wonder-purple": "#8952C7",

@@ -1,0 +1,53 @@
+---
+import { formatEpoch } from "@/utils/formatter";
+
+interface Props {
+  article: {
+    img: {
+      url: string;
+      alt: string;
+    };
+    type: string;
+    title: {
+      en: string;
+      id: string;
+    };
+    date: number;
+    author: {
+      name: string;
+      profile: string;
+    };
+    content: {
+      en: string;
+      id: string;
+    };
+  };
+}
+
+const data = Astro.props;
+const article = data.article;
+---
+
+<article class="flex w-[355px] flex-col gap-9 font-jakarta-sans text-wonder-text">
+  <img
+    src={article.img.url}
+    alt={article.img.alt}
+    class="h-[250px] cursor-pointer rounded-[14px] border-2 border-wonder-text object-cover shadow-[6px_11px_0_0_#14383D]"
+  />
+
+  <p class="text-2xl font-medium uppercase tracking-[1.2px] opacity-70">{article.type}</p>
+
+  <h2 class="text-[28px] font-extrabold leading-[50px]">{article.title.en}</h2>
+
+  <div class="flex items-center gap-4">
+    <img
+      src={data.article.author.profile}
+      alt={article.author.name}
+      class="h-[45px] w-[45px] rounded-[120px] object-cover shadow-[0_4px_0_0_#14383D]"
+    />
+
+    <p class="flex-grow text-base leading-[50px] text-black opacity-60">
+      {`${article.author.name} on ${formatEpoch(article.date, "dd LLL yy")}`}
+    </p>
+  </div>
+</article>
