@@ -18,7 +18,14 @@ export default {
         "wonder-text": "#14383D",
         "wonder-purple-transparent": "rgba(137, 82, 199, 0.20)",
       },
+      container: {
+        center: true,
+      },
       screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1142px",
         "2xl": "1440px",
       },
     },
