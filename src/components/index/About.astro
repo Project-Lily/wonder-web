@@ -5,7 +5,9 @@ import Diagram from "./components/Diagram.astro";
 ---
 
 <section class="flex flex-col items-center">
-  <h1 class="py-10 text-6xl font-bold text-wonder-text">What is Wonder Reader all about?</h1>
+  <h1 class="py-5 text-center text-3xl font-bold text-wonder-text lg:py-10 lg:text-6xl">
+    What is Wonder Reader all about?
+  </h1>
 
   {about.map((child) => <Diagram about={child} />)}
 </section>
