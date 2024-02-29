@@ -1,0 +1,11 @@
+---
+import { about } from "@/config/about";
+
+import Diagram from "./components/Diagram.astro";
+---
+
+<section class="flex flex-col items-center">
+  <h1 class="py-10 text-6xl font-bold text-wonder-text">What is Wonder Reader all about?</h1>
+
+  {about.map((child) => <Diagram about={child} />)}
+</section>
