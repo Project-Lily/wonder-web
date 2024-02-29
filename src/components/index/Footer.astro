@@ -1,20 +1,31 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+
+import Stevie from "@/assets/Stevie.webp";
+import Contact from "@/components/Contact.astro";
 ---
 
-<footer class="container relative mx-auto bg-wonder-purple py-[168px] font-jakarta-sans">
-  <div class="mx-auto flex flex-col items-center gap-16 px-8 lg:w-[430px]">
-    <h1 class="text-center text-3xl font-bold leading-[45px] text-white lg:text-[38px]">
-      Ready to take the next step with us?
-    </h1>
+<footer class="relative flex w-full overflow-hidden">
+  <section class="flex flex-col gap-14 py-14 pl-10 pr-10 text-wonder-text lg:w-[560px] lg:py-28 lg:pl-20 lg:pr-0">
+    <h1 class="text-4xl font-bold lg:text-5xl">Let's make Indonesia more wonderful.</h1>
 
-    <button
-      class="flex max-w-fit items-center rounded-[21px] border-2 border-wonder-text bg-white px-14 py-3 text-wonder-purple shadow-[0_4.2px_0_0_#14383D]">
-      <span class="text-2xl font-bold">Contact Us!</span>
-    </button>
-  </div>
+    <div class="flex flex-col gap-8">
+      <h2 class="text-3xl font-bold">For Organizations</h2>
 
-  <Icon name="ic-braille-yellow" class="bottom-9 left-0 hidden h-[427px] w-[280px] lg:absolute" />
+      <p class="text-lg">
+        For organizations out there interested in working with us and helping us out, our doors are definitely open!
+      </p>
 
-  <Icon name="ic-stevie-blue" class="bottom-9 right-0 hidden h-[288px] w-[276px] lg:absolute" />
+      <Contact />
+    </div>
+  </section>
+
+  <div class="bg-block-blue absolute bottom-0 left-0 h-6 w-52"></div>
+  <div class="absolute bottom-0 left-52 h-6 w-[520px] bg-wonder-purple"></div>
+  <div class="bg-block-green absolute bottom-0 left-[728px] h-6 w-[148px]"></div>
+  <div class="bg-block-yellow absolute bottom-0 left-[876px] h-6 w-[259px]"></div>
+  <div class="bg-block-red absolute bottom-0 left-[1135px] h-6 w-[259px]"></div>
+  <div class="bg-block-pink absolute bottom-0 left-[1394px] h-6 w-[48px]"></div>
+
+  <Image src={Stevie} alt="Stevie" class="absolute bottom-0 right-2 -z-10 hidden h-[379px] w-[387px] lg:block" />
 </footer>

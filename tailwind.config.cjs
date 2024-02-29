@@ -18,6 +18,11 @@ export default {
         "wonder-background": "rgba(246, 254, 233, 0) 81%)",
         "wonder-text": "#14383D",
         "wonder-purple-transparent": "rgba(137, 82, 199, 0.20)",
+        "block-blue": "#4851C7",
+        "block-green": "#6BC73E",
+        "block-yellow": "#FED132",
+        "block-red": "#C73E3E",
+        "block-pink": "#C75BC5",
       },
       container: {
         center: true,
