@@ -13,6 +13,7 @@ export default {
       },
       colors: {
         "wonder-purple": "#8952C7",
+        "wonder-purple-dark": "#5200AF",
         "wonder-dark": "#4D267A",
         "wonder-background": "rgba(246, 254, 233, 0) 81%)",
         "wonder-text": "#14383D",
