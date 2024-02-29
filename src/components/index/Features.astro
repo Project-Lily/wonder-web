@@ -1,45 +1,40 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+
+import Device from "@/assets/features/features-device.webp";
 ---
 
-<section
-  class="flex flex-col gap-[75px] bg-wonder-dark px-8 py-[168px] font-jakarta-sans text-white lg:flex-row lg:px-52">
-  <div class="flex flex-col items-center gap-[41px]">
-    <div class="rounded-lg bg-wonder-purple p-5">
-      <Icon name="ic-affordable" class="h-[99px] w-[99px]" />
+<section class="flex flex-col items-center gap-16 px-7 py-10 text-wonder-text lg:px-14 lg:py-12">
+  <h1 class="text-center text-2xl font-bold lg:text-5xl">
+    Read and write braille <span class="italic text-wonder-purple">anywhere, anytime.</span>
+  </h1>
+
+  <Image
+    src={Device}
+    alt="Wonder Reader Device"
+    class="h-[199px] w-[384px] drop-shadow-2xl lg:h-[351px] lg:w-[670px]"
+  />
+
+  <div class="flex flex-col gap-12 lg:flex-row lg:gap-32">
+    <div class="flex flex-col gap-3 lg:gap-7">
+      <h2 class="text-2xl font-bold lg:text-4xl">To Read</h2>
+
+      <p class="text-lg lg:text-2xl lg:leading-[38.4px]">
+        Reading with a <span class="font-bold">Braille keyboard</span> is advantageous for individuals who are blind or
+        visually impaired. It promotes
+        <span class="font-bold">independence, literacy, and efficiency,</span> providing a private means of
+        communication.
+      </p>
     </div>
 
-    <h1 class="text-3xl font-bold lg:text-4xl lg:leading-[57.6px]">Affordable</h1>
+    <div class="flex flex-col gap-3 lg:gap-7">
+      <h2 class="text-2xl font-bold lg:text-4xl">To Write</h2>
 
-    <p class="text-center text-base leading-7 tracking-[-0.05px]">
-      A braille keyboard with a production cost of under <span class="font-bold">4jt IDR!</span> (amongst the most
-      affordable in the world)
-    </p>
-  </div>
-
-  <div class="flex flex-col items-center gap-[41px]">
-    <div class="rounded-lg bg-wonder-purple p-5">
-      <Icon name="ic-refreshable" class="h-[99px] w-[99px]" />
+      <p class="text-lg lg:text-2xl lg:leading-[38.4px]">
+        Writing on a <span class="font-bold">Braille keyboard</span> is crucial for the blind. It enhances <span
+          class="font-bold">educational and employment prospects, aids navigation, and integrates with technology</span
+        > through Braille displays.
+      </p>
     </div>
-
-    <h1 class="text-3xl font-bold lg:text-4xl lg:leading-[57.6px]">Refreshable</h1>
-
-    <p class="text-center text-base leading-7 tracking-[-0.05px]">
-      It currently has <span class="font-bold">9 braille cells that are fully refreshable</span>, saving time and
-      creating a better experience.
-    </p>
-  </div>
-
-  <div class="flex flex-col items-center gap-[41px]">
-    <div class="rounded-lg bg-wonder-purple p-5">
-      <Icon name="ic-teachable" class="h-[99px] w-[99px]" />
-    </div>
-
-    <h1 class="text-3xl font-bold lg:text-4xl lg:leading-[57.6px]">Teachable</h1>
-
-    <p class="text-center text-base leading-7 tracking-[-0.05px]">
-      An <span class="font-bold">in-house made app</span> and <span class="font-bold">built-in speakers</span> can be
-      found on Wonder Reader, enabling braille education.
-    </p>
   </div>
 </section>
