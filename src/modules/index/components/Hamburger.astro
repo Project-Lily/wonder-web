@@ -1,0 +1,17 @@
+---
+import { Icon } from "astro-icon/components";
+
+import clsxm from "@/utils/clsxm";
+
+interface Props {
+  className?: string;
+}
+
+const props = Astro.props;
+---
+
+<button aria-label="Toggle Navbar Menu" class={clsxm("menu md:hidden cursor-pointer", props.className)}>
+  <Icon name="ic-hamburger" class="navmenu-toggle h-8 w-8" />
+
+  <Icon name="ic-cross" class="navmenu-toggle hidden h-8 w-8" />
+</button>

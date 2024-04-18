@@ -1,24 +1,24 @@
 ---
-import Articles from "@/components/index/Articles.astro";
-import Banner from "@/components/index/Banner.astro";
-import Features from "@/components/index/Features.astro";
-import Footer from "@/components/index/Footer.astro";
-import Quote from "@/components/index/Quote.astro";
-import Video from "@/components/index/Video.astro";
 import Layout from "@/layouts/Layout.astro";
+import About from "@/modules/index/About.astro";
+import Banner from "@/modules/index/Banner.astro";
+import Features from "@/modules/index/Features.astro";
+import Footer from "@/modules/index/Footer.astro";
+import Team from "@/modules/index/Team.astro";
+import Video from "@/modules/index/Video.astro";
 ---
 
 <Layout title="Home - Wonder Reader">
-  <main class="container mx-auto">
+  <main class="container font-jakarta-sans">
     <Banner />
 
-    <Video />
+    <About />
 
     <Features />
 
-    <Articles />
+    <Video />
 
-    <Quote />
+    <Team />
   </main>
 
   <Footer />

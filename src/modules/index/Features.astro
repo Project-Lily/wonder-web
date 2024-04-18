@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+
+import Device from "@/assets/features/features-device.webp";
+---
+
+<section class="flex flex-col items-center gap-16 px-7 py-10 text-wonder-text lg:px-14 lg:py-12">
+  <h1 class="text-center text-2xl font-bold lg:text-5xl">
+    Read and write braille <span class="italic text-wonder-purple">anywhere, anytime.</span>
+  </h1>
+
+  <Image
+    src={Device}
+    alt="Wonder Reader Device"
+    class="h-[199px] w-[384px] drop-shadow-2xl lg:h-[351px] lg:w-[670px]"
+  />
+
+  <div class="flex flex-col gap-12 lg:flex-row lg:gap-32">
+    <div class="flex flex-col gap-3 lg:gap-7">
+      <h2 class="text-2xl font-bold lg:text-4xl">To Read</h2>
+
+      <p class="text-lg lg:text-2xl lg:leading-[38.4px]">
+        Reading with a <span class="font-bold">Braille keyboard</span> is advantageous for individuals who are blind or
+        visually impaired. It promotes
+        <span class="font-bold">independence, literacy, and efficiency,</span> providing a private means of
+        communication.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-3 lg:gap-7">
+      <h2 class="text-2xl font-bold lg:text-4xl">To Write</h2>
+
+      <p class="text-lg lg:text-2xl lg:leading-[38.4px]">
+        Writing on a <span class="font-bold">Braille keyboard</span> is crucial for the blind. It enhances <span
+          class="font-bold">educational and employment prospects, aids navigation, and integrates with technology</span
+        > through Braille displays.
+      </p>
+    </div>
+  </div>
+</section>

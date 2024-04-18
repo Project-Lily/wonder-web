@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+
+import Binus from "@/assets/logos/binus.png";
+import Gdsc from "@/assets/logos/gdsc.png";
+import Google from "@/assets/logos/google.png";
+import Mitra from "@/assets/logos/mitra-netra.png";
+import Contact from "@/modules/Contact.astro";
+---
+
+<section
+  class="relative mx-4 my-1 flex flex-col gap-4 rounded-3xl bg-gradient-to-b from-wonder-purple-transparent from-0% to-100% py-6 text-wonder-text lg:mx-[30px] lg:my-[10px] lg:gap-9 lg:py-[120px]">
+  <div class="flex flex-col items-center gap-2 px-2 text-center lg:gap-3 lg:px-0">
+    <h1 class="text-2xl font-extrabold lg:text-[74px] lg:leading-[92px]">
+      Discover <span class="text-wonder-purple">Wonder Reader:</span>
+    </h1>
+
+    <h2 class="text-[22px] font-extrabold lg:text-[64px] lg:leading-[110px]">
+      braille literacy for <span class="text-wonder-purple">all</span>
+    </h2>
+
+    <p class="text-base opacity-80 lg:w-[568px] lg:text-[28px] lg:leading-[42px]">
+      An accessible companion for the visually impaired in today’s digital spaces.
+    </p>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <Contact />
+
+    <p class="mb-5 mt-8 text-lg font-bold opacity-60 lg:text-[25px] lg:leading-[49px]">Who we've worked with</p>
+
+    <div class="grid grid-flow-row grid-cols-2 items-center gap-3 lg:grid-flow-col lg:grid-cols-none lg:grid-rows-1">
+      <Image src={Gdsc} alt="Google Developer Student Clubs" class="h-[31px] w-[117px] grayscale" />
+
+      <Image src={Mitra} alt="Mitra Netra Foundation" class="w-[58px] place-self-center grayscale" />
+
+      <Image src={Google} alt="Google" class="m-[14px] w-[90px] grayscale" />
+
+      <Image src={Binus} alt="Binus University" class="mx-3 w-[95px] grayscale" />
+    </div>
+  </div>
+</section>

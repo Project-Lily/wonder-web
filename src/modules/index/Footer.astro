@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+
+import Stevie from "@/assets/Stevie.webp";
+import Contact from "@/modules/Contact.astro";
+---
+
+<footer class="relative flex w-full overflow-hidden">
+  <section class="flex flex-col gap-14 py-14 pl-10 pr-10 text-wonder-text lg:w-[560px] lg:py-28 lg:pl-20 lg:pr-0">
+    <h1 class="text-4xl font-bold lg:text-5xl">Let's make Indonesia more wonderful.</h1>
+
+    <div class="flex flex-col gap-8">
+      <h2 class="text-3xl font-bold">For Organizations</h2>
+
+      <p class="text-lg">
+        For organizations out there interested in working with us and helping us out, our doors are definitely open!
+      </p>
+
+      <Contact />
+    </div>
+  </section>
+
+  <div class="absolute bottom-0 left-0 h-6 w-52 bg-block-blue"></div>
+  <div class="absolute bottom-0 left-52 h-6 w-[520px] bg-wonder-purple"></div>
+  <div class="absolute bottom-0 left-[728px] h-6 w-[148px] bg-block-green"></div>
+  <div class="absolute bottom-0 left-[876px] h-6 w-[259px] bg-block-yellow"></div>
+  <div class="absolute bottom-0 left-[1135px] h-6 w-[259px] bg-block-red"></div>
+  <div class="absolute bottom-0 left-[1394px] h-6 w-[48px] bg-block-pink"></div>
+
+  <Image src={Stevie} alt="Stevie" class="absolute bottom-0 right-2 -z-10 hidden h-[379px] w-[387px] lg:block" />
+</footer>
