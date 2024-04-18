@@ -1,0 +1,56 @@
+---
+import { Icon } from "astro-icon/components";
+
+import { navMenu } from "@/config/navMenu";
+import Contact from "@/modules/Contact.astro";
+import Hamburger from "@/modules/index/components/Hamburger.astro";
+---
+
+<nav class="flex items-center justify-between p-4 text-wonder-text lg:px-9 lg:py-7">
+  <div class="flex items-center">
+    <Icon name="ic-wonder-nav" class="m-2 h-14 w-12 md:m-3 md:h-16 md:w-14" />
+
+    <Icon name="ic-wonder-nav-text" class="h-6 w-14 md:h-8 md:w-16" />
+  </div>
+
+  <Hamburger />
+
+  <div class="navmenu-toggle absolute right-0 top-0 z-10 m-4 hidden h-screen w-full flex-col items-end gap-3 bg-white">
+    <Hamburger className="px-4 pt-6" />
+
+    {
+      navMenu.map((child) => (
+        <a href={child.href} class="flex px-4 py-5 text-2xl font-medium">
+          {child.label}
+        </a>
+      ))
+    }
+
+    <Contact />
+  </div>
+
+  <div class="hidden items-center md:flex md:gap-2 lg:gap-3.5">
+    {
+      navMenu.map((child) => (
+        <a href={child.href} class="flex text-lg font-medium md:px-2 lg:px-9 lg:py-5 lg:text-2xl">
+          {child.label}
+        </a>
+      ))
+    }
+
+    <Contact />
+  </div>
+</nav>
+
+<script>
+  const menuButtons = document.querySelectorAll(".menu");
+
+  for (let button of menuButtons) {
+    button.addEventListener("click", () => {
+      [...document.querySelectorAll(".navmenu-toggle")].forEach((Element) => {
+        Element.classList.toggle("hidden");
+        Element.classList.toggle("flex");
+      });
+    });
+  }
+</script>
