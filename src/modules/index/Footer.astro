@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 
 import Stevie from "@/assets/Stevie.webp";
-import Contact from "@/components/Contact.astro";
+import Contact from "@/modules/Contact.astro";
 ---
 
 <footer class="relative flex w-full overflow-hidden">
@@ -20,12 +20,12 @@ import Contact from "@/components/Contact.astro";
     </div>
   </section>
 
-  <div class="bg-block-blue absolute bottom-0 left-0 h-6 w-52"></div>
+  <div class="absolute bottom-0 left-0 h-6 w-52 bg-block-blue"></div>
   <div class="absolute bottom-0 left-52 h-6 w-[520px] bg-wonder-purple"></div>
-  <div class="bg-block-green absolute bottom-0 left-[728px] h-6 w-[148px]"></div>
-  <div class="bg-block-yellow absolute bottom-0 left-[876px] h-6 w-[259px]"></div>
-  <div class="bg-block-red absolute bottom-0 left-[1135px] h-6 w-[259px]"></div>
-  <div class="bg-block-pink absolute bottom-0 left-[1394px] h-6 w-[48px]"></div>
+  <div class="absolute bottom-0 left-[728px] h-6 w-[148px] bg-block-green"></div>
+  <div class="absolute bottom-0 left-[876px] h-6 w-[259px] bg-block-yellow"></div>
+  <div class="absolute bottom-0 left-[1135px] h-6 w-[259px] bg-block-red"></div>
+  <div class="absolute bottom-0 left-[1394px] h-6 w-[48px] bg-block-pink"></div>
 
   <Image src={Stevie} alt="Stevie" class="absolute bottom-0 right-2 -z-10 hidden h-[379px] w-[387px] lg:block" />
 </footer>
